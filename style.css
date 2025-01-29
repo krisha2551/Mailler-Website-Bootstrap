@@ -11,6 +11,11 @@ h1{
     color: #353f4f !important; 
 }
 
+h4{
+    font-family: "Plus Jakarta Sans", serif !important;
+    color: #353f4f !important;  
+}
+
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--main-pink) !important;
 }
@@ -22,23 +27,24 @@ h1{
 
 :root{
     --main-pink:#f74780;
+    --main-white:#fff;
 }
 
 .text-pink{
-    color:var(--main-pink) !important;
+    color: var(--main-pink) !important;
 }
 
 .bg-pink{
-    background-color:var(--main-pink);
+    background-color: var(--main-pink);
 }
 
 .btn-pink{
-    background-color:var(--main-pink);
-    color: white;
+    background-color: var(--main-pink);
+    color: var(--main-white);
 }
 
 .btn-pink:hover{
-    background-color: white;
+    background-color:var(--main-white);
     border: 1px solid var(--main-pink);
     color: var(--main-pink) !important;
 }
@@ -52,6 +58,12 @@ h1{
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
 }
+
 .text-icon {
     color: #6610f2 !important;
 }
+
+a{
+    text-decoration: none;
+}
+
