@@ -6,6 +6,11 @@ body{
     color: #757575;
 }
 
+h1{
+    font-family: "Plus Jakarta Sans", serif !important;
+    color: #353f4f !important; 
+}
+
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--main-pink) !important;
 }
@@ -20,7 +25,7 @@ body{
 }
 
 .text-pink{
-    color:var(--main-pink);
+    color:var(--main-pink) !important;
 }
 
 .bg-pink{
@@ -42,4 +47,11 @@ body{
     padding-top: 100px;
     padding-bottom: 40px;
     position: relative;
+}
+
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+}
+.text-icon {
+    color: #6610f2 !important;
 }
