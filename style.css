@@ -1,0 +1,45 @@
+body{
+    font-family: "Rubik", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--main-pink) !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--main-pink) !important;
+}
+
+:root{
+    --main-pink:#f74780;
+}
+
+.text-pink{
+    color:var(--main-pink);
+}
+
+.bg-pink{
+    background-color:var(--main-pink);
+}
+
+.btn-pink{
+    background-color:var(--main-pink);
+    color: white;
+}
+
+.btn-pink:hover{
+    background-color: white;
+    border: 1px solid var(--main-pink);
+    color: var(--main-pink) !important;
+}
+
+.animatad{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    position: relative;
+}
