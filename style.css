@@ -8,12 +8,12 @@ body{
 
 h1{
     font-family: "Plus Jakarta Sans", serif !important;
-    color: #353f4f !important; 
+    color: var(--bs-dark)!important; 
 }
 
 h4{
     font-family: "Plus Jakarta Sans", serif !important;
-    color: #353f4f !important;  
+    color: var(--bs-dark)!important;  
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -28,6 +28,8 @@ h4{
 :root{
     --main-pink:#f74780;
     --main-white:#fff;
+    --bs-light: #F6F6FA;
+    --bs-dark: #353f4f;
 }
 
 .text-pink{
@@ -40,7 +42,7 @@ h4{
 
 .btn-pink{
     background-color:var(--main-pink);
-    color: var(--main-white);
+    color: var(--main-white) !important;
 }
 
 .btn-pink:hover{
@@ -79,5 +81,74 @@ a{
 
 .bg-light {
     background-color: #f6f6fa !important;
+}
+
+
+
+.btn.btn-light {
+    background: var(--bs-light) !important;
+    color: var(--main-pink) !important;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.btn.btn-light:hover {
+    background: var(--main-pink) !important;
+    color: var(--bs-light) !important;
+}
+
+.footer {
+    background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .footer-item a {
+    line-height: 35px;
+    color: var(--bs-dark);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footer .footer-item a:hover {
+    letter-spacing: 2px;
+    color: var(--main-pink);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bs-dark) !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+a {
+    color: #f74780;
+    text-decoration: none;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}    
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
