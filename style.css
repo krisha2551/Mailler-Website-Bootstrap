@@ -101,6 +101,10 @@ a{
     border: 1px;
 }
 
+.service .service-item:hover .service-icon {
+    background: var(--main-white) !important;
+}
+
 .btn.btn-light {
     background: var(--bs-light) !important;
     color: var(--main-pink) !important;
