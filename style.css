@@ -16,12 +16,12 @@ h4{
     color: var(--bs-dark)!important;  
 }
 
-.navbar-light .navbar-nav .nav-link.active {
+.nav-link.active {
     color: var(--main-pink) !important;
 }
 
 
-.navbar-light .navbar-nav .nav-link:hover{
+.nav-link:hover{
     color: var(--main-pink) !important;
 }
 
@@ -101,18 +101,18 @@ a{
     border: 1px;
 }
 
-.service-item:hover .service-icon {
+.service-icon {
     background: var(--main-white) !important;
 }
 
-.btn.btn-light {
+.btn-light {
     background: var(--bs-light) !important;
     color: var(--main-pink) !important;
     font-weight: 400;
     transition: 0.5s;
 }
 
-.btn.btn-light:hover {
+.btn-light:hover {
     background: var(--main-pink) !important;
     color: var(--bs-light) !important;
 }
@@ -130,18 +130,18 @@ a{
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
 
-.price .price-item:hover {
+.price-item:hover {
     background: var(--bs-white) !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
 }
 
-.price .price-item {
+.price-item {
     position: relative;
     overflow: hidden;
     transition: 0.5s;
 }
 
-.price .price-item .pice-item-offer {
+.pice-item-offer {
     position: absolute;
     width: 200px;
     height: 110px;
@@ -156,7 +156,7 @@ a{
     padding-bottom: 10px;
 }
 
-.blog .blog-item .blog-img {
+.blog-img {
     position: relative;
     overflow: hidden;
     background: rgba(102, 16, 242, 0.2);
@@ -164,15 +164,25 @@ a{
     border-top-left-radius: 10px;
 }
 
-.blog .blog-item .blog-img img {
+.blog-img:hover::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #353f4f6b;
+}
+
+.blog-img img {
     transition: 0.5s;
 }
 
-.blog .blog-item .blog-img:hover img {
+.blog-img:hover img {
     transform: scale(1.3);
 }
 
-.blog .blog-item .blog-img .blog-info {
+.blog-info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -187,6 +197,11 @@ a{
     transition: 0.5s;
 }
 
+.blog-content {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .footer {
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
     background-position: center center;
@@ -194,14 +209,14 @@ a{
     background-size: cover;
 }
 
-.footer .footer-item a {
+.footer-item a {
     line-height: 35px;
     color: var(--bs-dark);
     transition: 0.5s;
     text-decoration: none;
 }
 
-.footer .footer-item a:hover {
+.footer-item a:hover {
     letter-spacing: 2px;
     color: var(--main-pink);
 }
