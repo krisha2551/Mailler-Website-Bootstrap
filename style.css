@@ -202,6 +202,13 @@ a{
     border-bottom-right-radius: 10px;
 }
 
+.testimonial {
+    position: relative;
+    background: #F6F6FA;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .footer {
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
     background-position: center center;
