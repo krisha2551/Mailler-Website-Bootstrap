@@ -24,6 +24,8 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -67,7 +69,7 @@
                 </div>
             </nav>
 
-            <div class="animatad">
+            <div class="animatad overflow-hidden px-5">
                 <div class="row gy-5 px-5 align-items-center">
                     <div class="col-lg-6">
                         <h1 class="display-4 mb-4 fw-bold">
@@ -94,7 +96,9 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-6">
-                        <img src="img/about-1.png" alt="" class="img-fluid">
+                        <div class="RotateMoveLeft">
+                            <img src="img/about-1.png" class="img-fluid w-100" alt="">
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <h4 class="mb-1 text-pink">
@@ -341,8 +345,8 @@
                 </div>
 
                 <div class="row g-5 pt-5">
-                    <div class="col-lg-6">
-                        <img src="img/features-1.png" class="img-fluid " alt="">
+                    <div class="col-lg-6" data-aos="fade-up"  data-aos-duration="3000">
+                        <img src="img/features-1.png" class="img-fluid w-100 h-100" alt="">
                     </div>
                     <div class="col-lg-6">
                         <h4 class="text-pink">Fearutes</h4>
@@ -744,6 +748,13 @@
         <i class="fa fa-arrow-up"></i>
     </a>
 </body>
+
 <script src="bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
 
 </html>

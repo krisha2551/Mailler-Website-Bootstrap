@@ -65,6 +65,25 @@ h4{
     position: relative;
 }
 
+.animatad::before {
+    content: "";
+    position: absolute;
+    /* display: block; */
+    left: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    border-radius: 150px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: rgba(102, 16, 242, 0.05);
+    border-image: initial;
+    background: transparent;
+    animation: 45s linear 0s infinite normal none running;
+    transition: 0.5s;
+}
+
 .border-pink{
     border: 1px solid #f74780;
 }
@@ -91,6 +110,23 @@ a{
     background-color: #f6f6fa !important;
 }
 
+.RotateMoveLeft {
+    position: relative;
+    animation: RotateMoveLeft 10s linear infinite;
+}
+
+@keyframes RotateMoveLeft{
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 40px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.1) !important;
     transition: 0.5s;
@@ -105,6 +141,7 @@ a{
     background: var(--main-white) !important;
 }
 
+
 .btn-light {
     background: var(--bs-light) !important;
     color: var(--main-pink) !important;
@@ -116,6 +153,7 @@ a{
     background: var(--main-pink) !important;
     color: var(--bs-light) !important;
 }
+
 
 .accordion-button:focus {
     z-index: 3;
@@ -129,6 +167,7 @@ a{
     background-color: #feedf2;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
+
 
 .price-item:hover {
     background: var(--bs-white) !important;
@@ -155,6 +194,7 @@ a{
     justify-content: center;
     padding-bottom: 10px;
 }
+
 
 .blog-img {
     position: relative;
@@ -202,12 +242,14 @@ a{
     border-bottom-right-radius: 10px;
 }
 
+
 .testimonial {
     position: relative;
     background: #F6F6FA;
     overflow: hidden;
     z-index: 1;
 }
+
 
 .footer {
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
@@ -228,6 +270,7 @@ a{
     color: var(--main-pink);
 }
 
+
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
@@ -241,6 +284,7 @@ a {
     color: #f74780;
     text-decoration: none;
 }
+
 
 .btn-square {
     width: 32px;
