@@ -59,6 +59,12 @@ h4{
     color: var(--main-pink) !important;
 }
 
+.border-pink {
+    border-color: var(--main-pink) !important;
+}
+
+
+
 .animatad{
     padding-top: 100px;
     padding-bottom: 40px;
@@ -250,6 +256,26 @@ a{
     z-index: 1;
 }
 
+.owl-carousel {
+    position: relative;
+    padding: 0 35px;
+    transition: 0.5s;
+}
+
+.owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-stage{
+    transform: translate3d(-3753px, 0px, 0px);
+    transition: 1.5s;
+    width: 8757px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
 
 .footer {
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
