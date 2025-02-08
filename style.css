@@ -1,3 +1,11 @@
+:root{
+    --main-pink:#f74780;
+    --main-white:#fff;
+    --bs-light: #F6F6FA;
+    --bs-dark: #353f4f;
+}
+
+
 body{
     font-family: "Rubik", serif;
     font-size: 16px;
@@ -16,6 +24,8 @@ h4{
     color: var(--bs-dark)!important;  
 }
 
+
+
 .nav-link.active {
     color: var(--main-pink) !important;
 }
@@ -25,12 +35,7 @@ h4{
     color: var(--main-pink) !important;
 }
 
-:root{
-    --main-pink:#f74780;
-    --main-white:#fff;
-    --bs-light: #F6F6FA;
-    --bs-dark: #353f4f;
-}
+
 
 .text-pink{
     color:var(--main-pink) !important;
@@ -63,33 +68,6 @@ h4{
     border-color: var(--main-pink) !important;
 }
 
-
-
-.animatad{
-    padding-top: 100px;
-    padding-bottom: 40px;
-    position: relative;
-}
-
-.animatad::before {
-    content: "";
-    position: absolute;
-    /* display: block; */
-    left: 100px;
-    bottom: 100px;
-    width: 300px;
-    height: 300px;
-    z-index: -1;
-    border-radius: 150px;
-    border-width: 30px;
-    border-style: solid;
-    border-color: rgba(102, 16, 242, 0.05);
-    border-image: initial;
-    background: transparent;
-    animation: 45s linear 0s infinite normal none running;
-    transition: 0.5s;
-}
-
 .border-pink{
     border: 1px solid #f74780;
 }
@@ -115,6 +93,119 @@ a{
 .bg-light {
     background-color: #f6f6fa !important;
 }
+
+
+
+.animatad{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.rotate-img {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    bottom: -9%;
+    left: -7%;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    border: 30px solid rgba(247, 71, 128, 0.05);
+    background: transparent;
+    animation: RotateMove 5slinear infinite;
+    z-index: -1;
+}
+
+@keyframes RotateMove{
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        left: -10px;
+    }
+    75% {
+        bottom: 9%;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+.animatad::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    border-radius: 150px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: rgba(102, 16, 242, 0.05);
+    border-image: initial;
+    background: transparent;
+    animation: RotateMoveSty-4 45s linear 0s infinite normal none running;
+    transition: 0.5s;
+}
+
+@keyframes RotateMoveSty-4{
+    0% {
+        left: 100px;
+    }
+    40% {
+        bottom: -0px;
+    }
+    50% {
+        left: 700px;
+    }
+    70% {
+        bottom: 500px;
+    }
+    80% {
+        left: 400px;
+    }
+    95% {
+        bottom: -0px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+.header::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: var(--bs-light);
+    border-radius: 22% 78% 33% 67% / 32% 0% 100% 68%;
+    animation: bgMove 5slinear infinite;
+    z-index: -1;
+}
+
+@keyframes bgMove{
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 20px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+
 
 .RotateMoveLeft {
     position: relative;
@@ -160,6 +251,28 @@ a{
     color: var(--bs-light) !important;
 }
 
+.feature-img {
+    background: var(--bs-light);
+    border-radius: 58% 42% 21% 79% / 30% 29% 71% 70%;
+}
+
+.RotateMoveLeft {
+    position: relative;
+    animation: RotateMoveLeft 10slinear infinite;
+}
+
+@keyframes RotateMoveLeft{
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 40px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
 
 .accordion-button:focus {
     z-index: 3;
@@ -173,6 +286,7 @@ a{
     background-color: #feedf2;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
+
 
 
 .price-item:hover {
