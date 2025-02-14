@@ -96,16 +96,46 @@ a{
 
 
 
-.animatad{
-    padding-top: 100px;
-    padding-bottom: 40px;
+.animated{
+    padding-top: 160px;
+    padding-bottom: 100px;
     position: relative;
 }
 
-.rotate-img {
+.animated::after{
+    content: "";
     position: absolute;
-    top: 70px;
-    left: 20px;
+    width: 58px;
+    height: 50px;
+    background-image: url(img/sty-1.png);
+    z-index: -1;
+    left: 100px;
+    bottom: 100px;
+    animation: Move2 45s linear infinite;
+}
+
+@keyframes Move2{
+    0% {
+        left: 100px;
+    }
+    40% {
+        bottom: -0px;
+    }
+    50% {
+        left: 700px;
+    }
+    70% {
+        bottom: 500px;
+    }
+    80% {
+        left: 400px;
+    }
+    95% {
+        bottom: -0px;
+    }
+    100% {
+        left: 100px;
+    }
 }
 
 
@@ -362,33 +392,83 @@ a{
     border-bottom-right-radius: 10px;
 }
 
+.carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 16, 242, 0.09);
+    color: var(--main-pink);
+    transition: 0.5s;
+} 
 
-.testimonial {
-    position: relative;
-    background: #F6F6FA;
-    overflow: hidden;
-    z-index: 1;
+.carousel-control-prev:hover{
+    background: var(--main-pink);
+    color: var(--main-white) !important;
 }
 
-.owl-carousel {
-    position: relative;
-    padding: 0 35px;
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 16, 242, 0.09);
+    color: var(--main-pink);
     transition: 0.5s;
 }
 
-.owl-stage-outer {
-    position: relative;
-    overflow: hidden;
+.carousel-control-next:hover{
+    background: var(--main-pink);
+    color: var(--main-white) !important;
 }
 
-.owl-stage{
-    transform: translate3d(-3753px, 0px, 0px);
-    transition: 1.5s;
-    width: 8757px;
+
+.img1{
+    background-image: url(img/testimonial-img-1.jpg);
+    background-size: cover;
+    border-radius:100% !important;
+    aspect-ratio: 1/1 !important;
+    border: 1px solid #f74780 !important;
+    display: inline-block !important;
+    height: 100px !important;
+    width: 100px !important;
+    scale: 0.5 !important;
 }
 
-.rounded-circle {
-    border-radius: 50% !important;
+.img2{
+    background-image: url(img/testimonial-img-2.jpg);
+    background-size: cover;
+    border-radius:100% !important;
+    aspect-ratio: 1/1 !important;
+    border: 1px solid #f74780 !important;
+    display: inline-block !important;
+    height: 100px !important;
+    width: 100px !important;
+    scale: 0.5 !important;
+}
+
+.img3{
+    background-image: url(img/testimonial-img-3.jpg);
+    background-size: cover;
+    border-radius:100% !important;
+    aspect-ratio: 1/1 !important;
+    border: 1px solid #f74780 !important;
+    display: inline-block !important;
+    height: 100px !important;
+    width: 100px !important;
+    scale: 0.5 !important;
 }
 
 .footer {
